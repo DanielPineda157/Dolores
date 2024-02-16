@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación de Veredas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start; /* Alinear los menús desplegables en la parte superior */
+            height: 100vh;
+            padding-top: 20px; /* Ajuste para el margen superior */
+            padding-right: 20px;
+            position: relative; /* Hacer que el contenedor sea relativo para posicionar la imagen */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+            border-radius: 20px; /* Redondear los bordes del contenedor */
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            padding: 5px 10px; /* Espaciado interno */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 10px; /* Redondear los bordes del menú desplegable */
+            overflow: hidden; /* Para asegurar que las esquinas redondeadas sean visibles */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #ddd; /* Línea divisoria entre elementos */
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none; /* Quitar la línea divisoria del último elemento */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+
+        .center-image {
+    position: absolute;
+    top: 50%;
+    left: 40%; /* Cambiar el valor de left para desplazar la imagen hacia la izquierda */
+    transform: translate(-50%, -50%);
+    border-radius: 10%; /* Redondear la imagen */
+    width: 40%; /* Reducir el tamaño de la imagen en un 40% */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592;</button>
+
+        <div class="dropdown">
+            <span>Territorio No. 1</span>
+            <div class="dropdown-content">
+                <a href="https://maps.apple.com/?q=Palos+Altos,+Dolores,+Tolima,+Colombia" target="_blank">Palos Altos</a>
+                <a href="https://maps.apple.com/?q=Buenas+Vista,+Dolores,+Tolima,+Colombia" target="_blank">Buenas Vista</a>
+                <a href="https://maps.apple.com/?q=Los+Mangos,+Dolores,+Tolima,+Colombia" target="_blank">Los Mangos</a>
+                <a href="https://maps.apple.com/?q=Los+Gusanos,+Dolores,+Tolima,+Colombia" target="_blank">Los Gusanos</a>
+                <a href="https://maps.apple.com/?q=Santa+Rita,+Dolores,+Tolima,+Colombia" target="_blank">Santa Rita</a>
+                <a href="https://maps.apple.com/?q=San+Juan,+Dolores,+Tolima,+Colombia" target="_blank">San Juan</a>
+                <a href="https://maps.apple.com/?q=San+Pablo,+Dolores,+Tolima,+Colombia" target="_blank">San Pablo</a>
+                <a href="https://maps.apple.com/?q=Rionegro,+Dolores,+Tolima,+Colombia" target="_blank">Rionegro</a>
+                <a href="https://maps.apple.com/?q=La+Soledad,+Dolores,+Tolima,+Colombia" target="_blank">La Soledad</a>
+                <a href="https://maps.apple.com/?q=Palma+Losa,+Dolores,+Tolima,+Colombia" target="_blank">Palma Losa</a>
+                <a href="https://maps.apple.com/?q=Llantos,+Dolores,+Tolima,+Colombia" target="_blank">Llantos</a>
+                <a href="https://maps.apple.com/?q=San+Pedro,+Dolores,+Tolima,+Colombia" target="_blank">San Pedro</a>
+                <a href="https://maps.apple.com/?q=Guayacanal,+Dolores,+Tolima,+Colombia" target="_blank">Guayacanal</a>
+                <a href="https://maps.apple.com/?q=Vegas+del+Café,+Dolores,+Tolima,+Colombia" target="_blank">Vegas del Café</a>
+                <a href="https://maps.apple.com/?q=Palmira,+Dolores,+Tolima,+Colombia" target="_blank">Palmira</a>
+                <a href="https://maps.apple.com/?q=El+Puñal,+Dolores,+Tolima,+Colombia" target="_blank">El Puñal</a>
+                <a href="https://maps.apple.com/?q=Riachon,+Dolores,+Tolima,+Colombia" target="_blank">Riachon</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Territorio No. 2</span>
+            <div class="dropdown-content">
+                <a href="https://maps.apple.com/?q=Guacamayas,+Dolores,+Tolima,+Colombia" target="_blank">Guacamayas</a>
+                <a href="https://maps.apple.com/?q=San+José,+Dolores,+Tolima,+Colombia" target="_blank">San José</a>
+                <a href="https://maps.apple.com/?q=El+Pescado,+Dolores,+Tolima,+Colombia" target="_blank">El Pescado</a>
+                <a href="https://maps.apple.com/?q=El+Japón,+Dolores,+Tolima,+Colombia" target="_blank">El Japón</a>
+                <a href="https://maps.apple.com/?q=Portachuelo,+Dolores,+Tolima,+Colombia" target="_blank">Portachuelo</a>
+                <a href="https://maps.apple.com/?q=Picachos,+Dolores,+Tolima,+Colombia" target="_blank">Picachos</a>
+                <a href="https://maps.apple.com/?q=América,+Dolores,+Tolima,+Colombia" target="_blank">América</a>
+                <a href="https://maps.apple.com/?q=La+Caja,+Dolores,+Tolima,+Colombia" target="_blank">La Caja</a>
+                <a href="https://maps.apple.com/?q=El+Carmen,+Dolores,+Tolima,+Colombia" target="_blank">El Carmen</a>
+                <a href="https://maps.apple.com/?q=El+Macal,+Dolores,+Tolima,+Colombia" target="_blank">El Macal</a>
+                <a href="https://maps.apple.com/?q=El+Yopo,+Dolores,+Tolima,+Colombia" target="_blank">El Yopo</a>
+                <a href="https://maps.apple.com/?q=Puerta+de+Caña,+Dolores,+Tolima,+Colombia" target="_blank">Puerta de Caña</a>
+                <a href="https://maps.apple.com/?q=Corinto+Mal+Nombre,+Dolores,+Tolima,+Colombia" target="_blank">Corinto Mal Nombre</a>
+                <a href="https://maps.apple.com/?q=Bermejo,+Dolores,+Tolima,+Colombia" target="_blank">Bermejo</a>
+                <a href="https://maps.apple.com/?q=Colopo,+Dolores,+Tolima,+Colombia" target="_blank">Colopo</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Territorio No. 3</span>
+            <div class="dropdown-content">
+                <a href="https://maps.apple.com/?q=Benjamin,+Dolores,+Tolima,+Colombia" target="_blank">Benjamin</a>
+                <a href="https://maps.apple.com/?q=Centro,+Dolores,+Tolima,+Colombia" target="_blank">Centro</a>
+                <a href="https://maps.apple.com/?q=El+Manti,+Dolores,+Tolima,+Colombia" target="_blank">El Manti</a>
+                <a href="https://maps.apple.com/?q=Gaitán,+Dolores,+Tolima,+Colombia" target="_blank">Gaitán</a>
+                <a href="https://maps.apple.com/?q=Jarrones+del+Recuerdo,+Dolores,+Tolima,+Colombia" target="_blank">Jarrones del Recuerdo</a>
+                <a href="https://maps.apple.com/?q=La+Paz,+Dolores,+Tolima,+Colombia" target="_blank">La Paz</a>
+                <a href="https://maps.apple.com/?q=La+Pradera,+Dolores,+Tolima,+Colombia" target="_blank">La Pradera</a>
+                <a href="https://maps.apple.com/?q=Monserrate,+Dolores,+Tolima,+Colombia" target="_blank">Monserrate</a>
+                <a href="https://maps.apple.com/?q=Obrero,+Dolores,+Tolima,+Colombia" target="_blank">Obrero</a>
+                <a href="https://maps.apple.com/?q=Porvenir,+Dolores,+Tolima,+Colombia" target="_blank">Porvenir</a>
+                <a href="https://maps.apple.com/?q=San+Rafael,+Dolores,+Tolima,+Colombia" target="_blank">San Rafael</a>
+                <a href="https://maps.apple.com/?q=Santa+Alicia,+Dolores,+Tolima,+Colombia" target="_blank">Santa Alicia</a>
+            </div>
+        </div>
+    </div>
+
+    <img src="assets/C.jpg"Imagen" class="center-image">
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Cerrar el menú desplegable si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

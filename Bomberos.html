@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomberos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            position: relative;
+        }
+
+        #map {
+            width: 50%;
+            height: 400px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .enlaces {
+            width: 50%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlaces a {
+            text-decoration: none;
+            color: #333;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .enlaces a:hover {
+            color: #555;
+            background-color: #ccc;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+
+        .bomberos-image {
+            position: absolute;
+            top: 25%;
+            right: 55%; /* Ajusta la posición horizontal de la imagen hacia la derecha */
+            width: 35%;
+            height: 60%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="map"></div>
+
+        <div class="enlaces">
+            <a href=https://maps.app.goo.gl/XWuL8W5Vgpd8zzDu9>Estacion De Bomberos Voluntarios De Purificacion</a>
+            <a href="https://maps.app.goo.gl/VU2JfgdhTNrLpwsX6">Estacion De Bomberos Voluntarios De Ibague</a>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592;</button>
+
+        <!-- Imagen de los bomberos -->
+        <img class="bomberos-image" src="https://tse4.mm.bing.net/th?id=OIP.4IBzB3I6BQNlAzuisl6b8wHaHa&pid=Api&P=0&h=180" alt="">
+    </div>
+</body>
+</html>

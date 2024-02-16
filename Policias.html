@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicacion de Policias</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            position: relative;
+        }
+
+        #map {
+            width: 50%;
+            height: 400px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            z-index: 1; /* Asegura que el mapa esté en la parte delantera */
+        }
+
+        .enlaces {
+            width: 50%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2; /* Asegura que los enlaces estén en la parte delantera */
+        }
+
+        .enlaces a {
+            text-decoration: none;
+            color: #333;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .enlaces a:hover {
+            color: #555;
+            background-color: #ccc;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 3; /* Asegura que el botón de retroceso esté en la parte delantera */
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+
+        .policia-image {
+    position: absolute;
+    top: 20%; /* Ajusta la posición vertical de la imagen NEW*/
+    left: 5%; /* Ajusta la posición horizontal de la imagen hacia la izquierda NEW */
+    width: 35%; /* Ajusta el ancho de la imagen NEW*/
+    height: 77%; /* Ajusta la altura de la imagen NEW*/
+    z-index: 0; /* Asegura que la imagen de fondo esté detrás de otros elementos NEW*/
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Mapa de ubicación -->
+        <div id="map"></div>
+
+        <!-- Enlaces relacionados -->
+        <div class="enlaces">
+            <a href="https://maps.app.goo.gl/GSYwcSzW3pDAZbNg9">Estación de Policía Dolores</a>
+            <a href="https://maps.app.goo.gl/wrVpgjYG8UifuhiBA">Estación de Policía icononzo</a>
+        </div>
+
+        <!-- Botón de retroceso -->
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592;</button>
+
+        <!-- Imagen de la Policía Nacional -->
+        <img class="policia-image" src="https://20fb104996.cbaul-cdnwnd.com/34ef156f5c1c7b8456e08db8ab90ef74/200000011-96b5997af9/32241_115146645195430_115144905195604_85217_4112810_n.jpg" width="250" height="242" alt="">
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicacion de base militar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 60%;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            position: relative;
+        }
+
+        #map {
+            width: 10%;
+            height: 40px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .enlaces {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlaces a {
+            text-decoration: none;
+            color: #333;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ddd;
+            margin-bottom: 10px;
+            display: block; 
+        }
+
+        .enlaces a:hover {
+            color: #555;
+            background-color: #ccc;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+
+        /* Estilos para la imagen */
+        .logo-img {
+            width: 50%; /* Ajusta el ancho según sea necesario */
+            height: auto;
+            margin-left: 60px; /* Mueve la imagen a la derecha */
+        }
+
+        @media (max-width: 768px) {
+            /* Para dispositivos móviles, cambia el diseño a columnas */
+            .container {
+                flex-direction: column;
+            }
+            #map,
+            .enlaces {
+                width: 100%;
+                border-radius: 0; /* Elimina los radios en dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Escudo_Ejercito_Nacional_de_Colombia.svg/1200px-Escudo_Ejercito_Nacional_de_Colombia.svg.png" alt="Escudo Ejercito Nacional de Colombia" class="logo-img">
+
+        <div id="map"></div>
+
+        <div class="enlaces">
+            <a href="https://maps.google.com/?q=Base+Militar+La+Esperanza,+Dolores,+Tolima" target="_blank">Base Militar La Esperanza</a>
+            <a href="https://maps.google.com/?q=Base+Militar+San+Pedro,+Dolores,+Tolima" target="_blank">Base Militar San Pedro</a>
+            <a href="https://maps.google.com/?q=Base+Militar+La+Unión,+Dolores,+Tolima" target="_blank">Base Militar La Unión</a>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592;</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuelas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .container {
+            width: 80%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            display: flex;
+            position: relative;
+        }
+
+        #map {
+            width: 50%;
+            height: 400px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .enlaces {
+            width: 50%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlaces a {
+            text-decoration: none;
+            color: #333;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .enlaces a:hover {
+            color: #555;
+            background-color: #ccc;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+
+        .colegio-image {
+            position: absolute;
+            top: 20%; /* Ajusta la posición vertical de la imagen */
+            left: 5%; /* Ajusta la posición horizontal de la imagen hacia la izquierda */
+            width: 35%; /* Ajusta el ancho de la imagen */
+            height: 77%; /* Ajusta la altura de la imagen */
+            z-index: 0; /* Asegura que la imagen de fondo esté detrás de otros elementos */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="map"></div>
+
+        <div class="enlaces">
+            <a href="https://www.google.com/maps/place/Instituci%C3%B3n+Educativa+San+Andr%C3%A9s/@3.6092135,-74.8321457,18z/data=!4m6!3m5!1s0x8e3c027ebd1b24fb:0xab4da81adfe99a8f!8m2!3d3.609267!4d-74.831856!16s%2Fg%2F11csqht5h3?entry=ttu">Institución Educativa San Andrés</a>
+            <a href="https://www.google.com/maps/place/Escuela+Los+Mangos/@3.60324,-74.8755794,18z/data=!4m6!3m5!1s0x8e3c012ae7dd5d65:0xe55c3c0fe3c9ea95!8m2!3d3.60324!4d-74.875!16s%2Fg%2F11kl590ddq?entry=ttu">Escuela Los Mangos</a>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592;</button>
+        
+        <!-- Aquí se añade la imagen de profile-pic.png -->
+        <img class="colegio-image" src="assets/profile-pic.png" width="250" height="242" alt="">
+    </div>
+</body>
+</html>

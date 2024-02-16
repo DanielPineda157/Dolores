@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+
+        .contact-info {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: right; 
+        }
+
+        .contact-info h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 24px;
+            text-align: left; 
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            color: #666;
+            text-align: left; 
+        }
+
+        .contact-info strong {
+            display: inline-block;
+            width: 300px; 
+            text-align: right; 
+            margin-right: 10px; 
+        }
+        
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 90px;
+            height: auto;
+            z-index: 1; 
+        }
+
+        .background-shield {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Logo -->
+        <img class="logo" src="assets/profile-pic.png" alt="Logo">
+
+        <!-- Sección de información de contacto -->
+        <div class="contact-info">
+            <h2>ㅤㅤㅤㅤㅤContacto Dolores tolima</h2>
+            <p><strong>Secretaría de Planeación:</strong> Jeferson Sepúlveda - 3123589772</p>
+            <p><strong>Correo Electrónico:</strong> planeacion@dolores-tolima.gov.co</p>
+            <p><strong>Secretaría General de Gobierno Auxiliar:</strong> Vellanit Leal - 3138711275</p>
+            <p><strong>Correo Electrónico:</strong> nomina@dolores-tolima.gov.co</p>
+            <p><strong>Secretaría de Gobierno:</strong> Luis Fernando Rincón Roa - 3123947174</p>
+            <p><strong>Correo Electrónico:</strong> gobierno@dolores-tolima.gov.co</p>
+            <p><strong>Alcalde:</strong> Alcaldía - alcaldia@dolores-tolima.gov.co</p>
+            <p><strong>Atención Primaria en Salud:</strong> Alexandra Pérez Rodríguez - 3214440103</p>
+            <p><strong>Correo Electrónico:</strong> salud@dolores-tolima.gov.co</p>
+            <p><strong>Sisbén:</strong> 3203196254</p>
+            <p><strong>Correo Electrónico:</strong> sisben@dolores-tolima.gov.co</p>
+            <p><strong>Personería:</strong> Francis Lorena Castro Yate - 3183868063</p>
+            <p><strong>Correo Electrónico:</strong> personeria@dolores-tolima.gov.co</p>
+            <p><strong>Policía:</strong> Yasser Antonio Palacios Perea - 3234414025</p>
+            <p><strong>Correo Electrónico:</strong> detol.edolores@policia.gov.co</p>
+            <button class="back-button" onclick="window.location.href='index.html'">&#8592;</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
